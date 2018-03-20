@@ -1,0 +1,89 @@
+.page-notes
+    .wrapper
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+.main-notes
+    padding: 25px 0 100px
+    flex 1
+    +tablet-down()
+        padding: 0 0 50px
+
+.evt-list
+    a
+        color: #000
+
+.post
+    margin-top: 25px
+    box-sizing: border-box
+    width: 50%
+    float: left
+    &-ovl
+        pointer-events: none
+        fullscreen(2)
+        transition: all .3s ease-out
+        background: rgba(0, 0, 0, .2)
+    cfx()
+    &:nth-child(1)
+        width: 100%
+        margin-bottom: 20px
+        .post-ovl
+            display: none
+        +tablet-down()
+            margin-bottom: 0
+            .post-cover
+                a
+                    display: none !important
+            .post-tit
+                font-size: 18px !important
+
+        .post-cover
+            height: 440px
+            a
+                display: block
+                z-index: 10
+            +tablet-down()
+                height: 200px
+
+        .post-tit
+            font-size: 22px
+
+        .post-desc
+            padding-bottom: 50px
+            border-bottom: 1px solid #eaeaea
+    img
+        width: 100%
+        height: 100%
+
+    &-cover
+        display: block
+        position: relative
+        margin-bottom: 20px
+        height: 236px
+        transition: all .2s ease-out
+        &:hover
+            .post-ovl
+                background: rgba(0, 0, 0, 0)
+    &-desc
+        color: #666
+        line-height: 1.2
+        +tablet-down()
+            padding-bottom: 20px !important
+            border-bottom: 1px solid #eaeaea
+    &-tit
+        font-size: 18px
+        margin-bottom: 10px
+    +tablet-down()
+        width: 100%
+    &:last-child
+        .post-desc
+            +tablet-down()
+                border-bottom none !important
+
+.foot
+    background-color: #f8f8f8
+    padding: 30px 0
+    p
+        text-align: center
+        font-size: 12px
+        color: #999

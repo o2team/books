@@ -1,0 +1,34 @@
+language: node_js
+
+sudo: false
+
+node_js:
+  - "8"
+
+cache:
+  apt: true
+  directories:
+    - node_modules
+
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - g++-4.8
+  ssh_known_hosts: github.com
+
+script:
+  - 'npm run build'
+  - 'npm run clean'
+  - 'npm run deploy  "${TRAVIS_PULL_REQUEST}"'
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - CXX: g++-4.8
+    - GH_REPO: "github.com/o2team/books.git"
+    - secure: "CfdAE65U89tcLCeYGQ5cR37W3MdaaP4uBS4hvyZIUOJl1CU+A81fx8yCKM1ZHskO7eU28s1c0wAsFVQdud/9KVbaR+fpMvZEhHhGasezX5ehCgeqyJQMY3cJ/+95gxk5ENhp73ed1MhsvDy6iXm6ph5fuAKzvZ1l18X9LVvs1VbCgT4STnJQHt+Rs0BxnlnJpRcUPCeFT+m2/pQ5BDzT8vkTqbAR3VSLoaeX5O9wYyyz9niXmZ+wQkFTXN3VCOt6xkeVEwhFT56eT8yAmcGZ6txE/TO4wlPKoUMEPTApGF/UVb1ExyLn6x6/wysLBQ0K/WSxgg/5YfMxUL0yqahp98xyiUcTxfiHedTvEo9v5lVybHIoXPGn1lDen4pzuy5shCpF5GPNb/4+rxtisdfWSimMT72/ojvA0tTxYSXL/o42J+MXhzzyJyoyMrz+KzIlg7RarBl39XM63evNgTk+9fMcQbptTvY9RwBJuPoM/YJRuL4OhlRibZMO25nMUv4uyd7GvP5CbkAkT9u0zkUQLYYa/LOvHPQmgGCe1Sorvv6zklTd14TnOt5Bsx5Za//TFyk1vIpYj2w/geBAse5Gbi3BOYblJBIeZ8sVUAI57tfNoqXwEZZOPO9vnEVtOLBekCsH5706rFUqaStJ9heAhcTkO2pd0M68XayIDF/RyP0="
