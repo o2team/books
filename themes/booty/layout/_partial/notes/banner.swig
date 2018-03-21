@@ -1,19 +1,53 @@
-<header class="head head-notes">
-    <div class="container">
-        <a class="logo" href="{{url_for('/')}}"><span class="logo-pic"></span></a>
+<section class="main notes-main">
+  <div class="container">
+    <div id="bookList" class="tile is-ancestor book-list">
+      {% for post in page.posts %}
+      {% set author = post.author|default({github_name:config.github.user, nick:config.author}) %}
+      {% if loop.index === 1 %}
+      <div class="tile is-parent is-8">
+      {% include '../post/mini.swig' with {classes: "is-warning", post: post, author: author} %}
+      </div>
+      {% elif loop.index === 2 %}
+      <div class="tile is-parent">
+      {% include '../post/mini.swig' with {classes: "is-info", post: post, author: author} %}
+      </div>
+      {% else %}
+      <div class="tile is-parent">
+      {% include '../post/mini.swig' with {classes: "", post: post, author: author} %}
+      </div>
+      {% endif %}
+      {% endfor%}
     </div>
-</header>
-<div class="main-notes">
-    <div class="container">
-        <div id="evtList" class="evt-list clearfix">
-            {% for post in page.posts %}
-            {% set author = post.author|default({github_name:config.github.user, nick:config.author}) %}
-            {% include '../post/mini.swig' with {post:post, author:author} %}
-            {% endfor%}
-        </div>
+
+    {% if post.posts.length < 2 %}
+    <div class="tile is-ancestor">
+      {% for post in page.posts %}
+      {% set author = post.author|default({github_name:config.github.user, nick:config.author}) %}
+      <div class="tile is-parent">
+      {% include '../post/mini.swig' with {classes: "is-warning", post: post, author: author} %}
+      </div>
+      {% endfor%}
     </div>
-</div>
-<div class="foot">
-    <p>Copyright © 2017. All Rights Reserved.</p>
-    <p>粤ICP备15077732号-2</p>
-</div>
+    {% else %}
+    <div class="tile is-ancestor">
+      {% for post in page.posts %}
+      {% set author = post.author|default({github_name:config.github.user, nick:config.author}) %}
+      {% if loop.index === 1 %}
+      <div class="tile is-parent is-8">
+      {% include '../post/mini.swig' with {classes: "is-warning", post: post, author: author} %}
+      </div>
+      {% elif loop.index === 2 %}
+      <div class="tile is-parent">
+      {% include '../post/mini.swig' with {classes: "is-info", post: post, author: author} %}
+      </div>
+      {% else %}
+      <div class="tile is-parent">
+      {% include '../post/mini.swig' with {classes: "", post: post, author: author} %}
+      </div>
+      {% endif %}
+      {% endfor%}
+    </div>
+    {% endif %}
+
+  </div>
+</section>

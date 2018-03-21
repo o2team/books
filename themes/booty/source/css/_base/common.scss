@@ -1,0 +1,186 @@
+html {
+  &.ovf-hidden {
+    overflow: hidden;
+    body {
+      overflow: hidden;
+    }
+  }
+}
+body {
+  background-color: $color-bg;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  .main {
+    display: flex;
+    flex: 1;
+    .container {
+      padding-top: px2rem(24px);
+      padding-bottom: px2rem(24px);
+      @include tablet() {
+        padding-top: px2rem(48px);
+        padding-bottom: px2rem(48px);
+      }
+    }
+  }
+}
+
+.navbar {
+  box-shadow: 0 0 px2rem(30px) rgba(0,0,0,.15);
+  .logo {
+    &-txt {
+      font-size: px2rem(18px);
+      font-weight: bold;
+    }
+  }
+  &-menu {
+    &.is-active {
+      border-top: 1px solid #ededed;
+      .navbar-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.ani {
+  visibility: hidden;
+}
+
+.btn {
+  display: inline-flex;
+  margin-bottom: 0;
+  justify-content: center;
+  align-items: center;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  user-select: none;
+  font-size: px2rem(14px);
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  &:focus,
+  &.focus,
+  &:active:focus,
+  &:active.focus,
+  &.active:focus,
+  &.active.focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  &:hover,
+  &:focus,
+  &.focus {
+    color: $color-btn-text-active;
+    text-decoration: none;
+  }
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+  }
+  &--owhite {
+    border: 1px solid $color-btn-text;
+    color: $color-btn-text;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: $color-btn-text;
+      background: $color-btn-bg-lite;
+      border: 1px solid $color-btn-bg-lite;
+    }
+  }
+  &--black {
+    background: $color-btn-bg;
+    color: $color-btn-text;
+    border: 1px solid $color-btn-bg;
+    transition: all .3s ease-in-out;
+    &:hover {
+      border: 1px solid $color-btn-text;
+      color: $color-btn-text;
+      background: 0 0;
+    }
+  }
+  &--ogrey {
+    border: 1px solid $color-btn-bg;
+    color: $color-btn-bg;
+    position: relative;
+    transition: all .3s ease-in-out;
+    &:hover {
+      border: 1px solid $color-btn-bg-lite;
+      color: $color-btn-text;
+      background-color: $color-btn-bg-lite;
+    }
+  }
+  &--licon {
+    .icon {
+      margin-right: 0.25rem;
+    }
+  }
+  &--ricon {
+    .icon {
+      margin-left: 0.25rem;
+    }
+  }
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+// icon
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  svg {
+    width: 100%;
+    height: auto;
+    fill: currentColor;
+  }
+  &--medium {
+    width: 2rem;
+    height: 2rem;
+  }
+  &--xl {
+    width: 3rem;
+    height: 3rem;
+  }
+  &--mini {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+  &-logo {
+    .ipath-1 {
+      fill: $color-highlight;
+    }
+  }
+  &-crown {
+    .ipath-1 {
+      fill: $color-red
+    }
+    .ipath-2 {
+      fill: $color-highlight;
+    }
+  }
+}

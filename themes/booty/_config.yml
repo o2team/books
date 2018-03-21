@@ -8,9 +8,6 @@ post:
 # baidu push
 baidu_push: false
 
-# Content
-fancybox: false
-
 # Code Highlight theme
 # Available value:
 #    normal | night | eighties | blue | bright

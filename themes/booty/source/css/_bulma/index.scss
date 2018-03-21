@@ -1,0 +1,46 @@
+// bulma customizing https://bulma.io/documentation/overview/customize/
+// 1. Import the initial variables
+@import "../../../../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../../../../node_modules/bulma/sass/utilities/functions";
+@import "../_base/variables";
+
+// 2. Set your own initial variables
+
+$navbar-height: 4rem;
+// Update blue
+$blue: $color-theme;
+// Add pink and its invert
+$pink: #ffb3b3;
+$pink-invert: #fff;
+$link: $color-link;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+// Use the existing orange as the danger color
+$danger: $orange;
+
+// 4. Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+
+// 5. Add new color variables to the color map.
+@import "../../../../../node_modules/bulma/sass/utilities/derived-variables";
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+.container {
+  max-width: 100%;
+}
+
+// 6. Import the rest of Bulma
+@import "../../../../../node_modules/bulma/bulma";

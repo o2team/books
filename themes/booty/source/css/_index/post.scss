@@ -1,0 +1,23 @@
+.post {
+  border-radius: 3px;
+  padding: 1.25rem 2.5rem 1.25rem 1.5rem;
+  position: relative;
+  background-color: #eeeeee;
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  &.is-warning {
+    background-color: $warning;
+  }
+  &.is-primary {
+    background-color: $primary;
+  }
+  &.is-info {
+    background-color: $info;
+  }
+  &.is-danger {
+    background-color: $danger;
+  }
+}

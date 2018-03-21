@@ -41,14 +41,6 @@
 <!-- CSS -->
 {{ css('css/style') }}
 
-<noscript>
-    {{ css('css/nojs') }}
-</noscript>
-
-{% if theme.fancybox %}
-{{ css('assets/fancybox/jquery.fancybox.css') }}
-{% endif %}
-
 <!-- RSS -->
 {{ feed_tag('atom.xml') }}
 <!-- Open Graph -->

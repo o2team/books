@@ -1,0 +1,43 @@
+/* Links styles inspired by http://tympanus.net/Development/CreativeLinkEffects/ */
+/* Effect 12: circle */
+.cl-effect-circle {
+  a {
+    position: relative;
+  }
+  &::before, &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: px2rem(100px);
+    height: px2rem(100px);
+    border: 2px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    content: '';
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translateX(-50%) translateY(-50%) scale(0.2);
+  }
+  &::after {
+    width: px2rem(90px);
+    height: px2rem(90px);
+    border-width: 6px;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+  }
+  &:hover::before, &:hover::after, &:focus::before, &:focus::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+}
+
+// link
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &-txt {
+    flex: 1;
+  }
+  &-icon {
+    margin-left: px2rem(8px);
+  }
+}

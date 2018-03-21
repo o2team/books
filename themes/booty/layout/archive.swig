@@ -4,8 +4,9 @@
 
 {% block main %}
 
-    {% include '_partial/notes/banner.swig' %}
-    
+  {% include '_partial/notes/banner.swig' %}
+  {% include '_partial/common/copyright.swig' %}
+
 {% endblock %}
 
 {% block footer %}

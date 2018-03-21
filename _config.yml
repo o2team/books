@@ -97,17 +97,6 @@ feed:
   path: atom.xml
   limit: false
 
-
-#stylus
-stylus:
-  compress: false
-  sourcemaps:
-    comment: true
-    inline: true
-    sourceRoot: ''
-    basePath: .
-
-
 # lunr
 lunr:
   field: all

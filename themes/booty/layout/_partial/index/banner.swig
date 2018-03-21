@@ -1,4 +1,4 @@
-<section class="main index-banner">
+<section class="main index-main">
   <div class="container">
     <div class="newbook">
       <div class="newbook-metas">
@@ -16,7 +16,7 @@
             </span>
             <span class="btn-txt">我想购买</span>
           </a>
-          <a class="btn btn--black btn--licon" href="https://juejin.im/book/5a7bfe595188257a7349b52a/section/5a7bfe59f265da4e7e10a6e9" target="_blank">
+          <a class="btn btn--ogrey btn--licon" href="https://juejin.im/book/5a7bfe595188257a7349b52a/section/5a7bfe59f265da4e7e10a6e9" target="_blank">
             <span class="icon icon--mini">
               <svg viewBox="0 0 1024 1024" aria-hidden="true">
                 <path d="M138.24 414.72L486.4 570.88c30.72 15.36 43.52 15.36 76.8 0l348.16-156.16c25.6-12.8 25.6-61.44 0-76.8L563.2 156.16c-28.16-15.36-46.08-15.36-76.8 0L138.24 337.92c-25.6 17.92-25.6 64 0 76.8z m386.56-227.84l355.84 192-355.84 148.48-355.84-151.04 355.84-189.44z m0 680.96L168.96 704s-30.72-12.8-53.76-28.16c0 20.48 5.12 56.32 23.04 66.56L486.4 898.56c30.72 15.36 43.52 15.36 76.8 0L911.36 742.4c17.92-7.68 23.04-46.08 23.04-66.56-23.04 10.24-53.76 28.16-53.76 28.16l-355.84 163.84zM138.24 578.56L486.4 734.72c30.72 15.36 43.52 15.36 76.8 0l348.16-156.16c17.92-7.68 23.04-46.08 23.04-66.56-23.04 10.24-53.76 28.16-53.76 28.16l-355.84 163.84-355.84-163.84s-30.72-12.8-53.76-28.16c0 20.48 5.12 56.32 23.04 66.56z"
@@ -34,12 +34,11 @@
             </span>
             <span class="btn-txt">查看详情</span>
           </a>
-
         </div>
       </div>
       <div class="newbook-cover">
         <a class="newbook-link" href="https://juejin.im/book/5a7bfe595188257a7349b52a/?ref=books.aotu.io" target="_blank" title="大厂 UI 开发实战手册">
-          <img class="newbook-pic" src="{{url_for('/assets/img/book1/cover.png')}}" alt="大厂 UI 开发实战手册"/>
+          <img class="newbook-pic" src="//img30.360buyimg.com/ling/jfs/t19249/282/981666836/313393/b4f3dd6e/5ab1bfdfN65c0e6e7.png.webp" alt="大厂 UI 开发实战手册"/>
         </a>
         <span class="icon icon--xl icon-crown">
           <svg viewBox="0 0 1024 1024" aria-hidden="true">

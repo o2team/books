@@ -1,0 +1,84 @@
+@import "../_base/variables";
+@import "post";
+
+.page-index {
+  background: $color-bg-primary;
+}
+
+.index-main {
+  background: $color-bg-primary;
+  color: #fff;
+  position: relative;
+}
+
+.newbook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: px2rem(16px);
+  padding-right: px2rem(16px);
+  &-metas {
+    width: 40rem;
+    max-width: 100%;
+  }
+  &-title {
+    margin-bottom: 0.5rem;
+    font-size: px2rem(20px);
+    @include tablet() {
+      font-size: px2rem(28px);
+    }
+  }
+  &-slogan {
+    font-size: px2rem(16px);
+    @include tablet() {
+      font-size: px2rem(18px);
+    }
+  }
+
+  &-actions {
+    margin-top: px2rem(20px);
+    .btn {
+      display: flex;
+      margin-bottom: px2rem(8px);
+      @include tablet() {
+        display: inline-flex;
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &-link {
+    display: block;
+    transition: all 0.3s ease;
+    &:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, .15);
+    }
+  }
+  &-cover {
+    margin-top: px2rem(24px);
+    width: 40rem;
+    position: relative;
+    max-width: 100%;
+  }
+  &-pic {
+    width: 100%;
+  }
+  .icon-crown {
+    $hw: px2rem(48px/2);
+    position: absolute;
+    right: auto;
+    left: 50%;
+    margin-left: - $hw;
+    top: - $hw;
+    @include tablet() {
+      left: auto;
+      margin-left: 0;
+      right: - $hw;
+    }
+  }
+}

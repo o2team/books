@@ -1,0 +1,36 @@
+@mixin fullscreen($zindex: 1) {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: $zindex;
+}
+
+@mixin vhc-wrap($jc: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $jc;
+}
+
+// Clearfix. http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin cfx() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after { clear: both; }
+}
+
+@function px2rem($pixels, $context: 16px) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}

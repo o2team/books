@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="ovf-hidden theme-{{config.theme}}">
+<html class="ovf-hidden has-navbar-fixed-top theme-{{config.theme}}">
 <head>
     <meta charset="utf-8"/>
     <title>{% block title %}{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}「{{ config.subtitle }}」{% endblock %}</title>
@@ -9,7 +9,9 @@
     {% block prebody %}{% endblock %}
     <div class="wrapper">
 
-    {% block header %}{% endblock %}
+    {% block header %}
+        {% include '_partial/common/header.swig' %}
+    {% endblock %}
 
 	{% block main %}{% endblock %}
 

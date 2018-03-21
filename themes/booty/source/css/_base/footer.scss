@@ -1,0 +1,25 @@
+.footer {
+  margin-top: px2rem(16px);
+  background: #f8f8f8;
+  padding: px2rem(24px) 0;
+  text-align: center;
+  border-top: 1px solid #eee;
+
+  &-links li {
+    width: px2rem(32px);
+    height: px2rem(32px);
+    line-height: px2rem(32px);
+    text-align: center;
+    display: inline-block;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    margin: 0 px2rem(6px);
+  }
+  &-copyright {
+    margin: px2rem(12px) 0;
+    font-size: 12px;
+    & p {
+      margin-bottom: px2rem(6px)
+    }
+  }
+}
