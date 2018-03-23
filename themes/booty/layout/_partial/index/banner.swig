@@ -1,4 +1,4 @@
-<section class="main index-main">
+<section class="section main index-main">
   <div class="container">
     <div class="newbook">
       <div class="newbook-metas">

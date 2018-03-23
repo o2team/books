@@ -71,6 +71,18 @@ hexo.extend.helper.register('header_menu', function(className){
   return result;
 });
 
+hexo.extend.helper.register('isActiveMenu', function (url, cls, exact) {
+    var path1 = this.path,
+    isActive = function (path0) {
+        if (path0 === 'index.html' || exact) {
+            return (path1 === path0 || path1 === `${path0}index.html`);
+        }
+        return (path1.indexOf(path0) !== -1);
+    };
+    if (cls) return isActive(url) ? cls : '';
+    return isActive(url);
+});
+
 /**
  * categories menu
  */

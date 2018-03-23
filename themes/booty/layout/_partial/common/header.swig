@@ -33,7 +33,7 @@
     </div>
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-end">
-        <a class="navbar-item" href="{{url_for('/notes')}}">
+        <a class="navbar-item{{ isActiveMenu('notes/', ' is-active', true) }}" href="{{url_for('/notes')}}">
           <span class="link-txt">所有小书</span>
           <span class="icon icon--mini link-icon">
             <svg viewBox="0 0 1024 1024">
@@ -41,6 +41,7 @@
               p-id="8707"></path>
             </svg>
           </span>
+          <span class="navbar-bd"></span>
         </a>
       </div>
     </div>

@@ -1,23 +1,36 @@
-.post {
+.mpost {
   border-radius: 3px;
+  display: block;
+  height: 100%;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
   position: relative;
   background-color: #eeeeee;
+  transition: all ease .3s;
+  color: $link;
+  &:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+  }
   img {
     width: 100%;
     height: auto;
     max-height: 100%;
+  }
+  .title, .subtitle, .content {
+    color: currentColor;
   }
   &.is-warning {
     background-color: $warning;
   }
   &.is-primary {
     background-color: $primary;
+    color: #fff;
   }
   &.is-info {
     background-color: $info;
+    color: #fff;
   }
   &.is-danger {
     background-color: $danger;
+    color: #fff;
   }
 }

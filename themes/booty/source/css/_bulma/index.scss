@@ -44,3 +44,12 @@ $colors: map-merge($colors, $addColors);
 
 // 6. Import the rest of Bulma
 @import "../../../../../node_modules/bulma/bulma";
+
+// Overrides
+.section {
+  padding: 1.5rem;
+  @include tablet() {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

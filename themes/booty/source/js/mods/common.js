@@ -34,6 +34,9 @@
     }
   };
 
+  // https://github.com/ApoorvSaxena/lozad.js
+  lozad().observe();
+
   App.$win.on('resize', function() {
     onResize();
     App.$win.trigger('siteResized');

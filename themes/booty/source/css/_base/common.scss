@@ -20,14 +20,6 @@ body {
   .main {
     display: flex;
     flex: 1;
-    .container {
-      padding-top: px2rem(24px);
-      padding-bottom: px2rem(24px);
-      @include tablet() {
-        padding-top: px2rem(48px);
-        padding-bottom: px2rem(48px);
-      }
-    }
   }
 }
 
@@ -46,6 +38,24 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+    }
+  }
+  &-item {
+    .navbar-bd {
+      display: none;
+      @include tablet() {
+        display: block;
+      }
+    }
+    &.is-active {
+      .navbar-bd {
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        right: 1rem;
+        height: 2px;
+        background-color: $color-highlight;
       }
     }
   }

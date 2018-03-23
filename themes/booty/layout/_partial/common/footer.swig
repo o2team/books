@@ -7,6 +7,7 @@
 {{ js('js/libs/jquery') }}
 {{ js('js/libs/jquery.ba-cond') }}
 {{ js('js/libs/jquery.hammer') }}
+{{ js('js/libs/lozad') }}
 {{ js('js/libs/base64') }}
 {{ js('js/mods/util') }}
 {{ js('js/mods/common') }}
