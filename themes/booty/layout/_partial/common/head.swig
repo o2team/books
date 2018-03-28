@@ -60,3 +60,15 @@ twitter_site: config.twitter
         isTag: {{is_tag()}}  
     };
 </script>
+
+{% if page.wechat %}
+<script>
+    window.WechatShareData = {
+        imgUrl: "{{ page.wechat.share_cover | default(page.cover) }}",
+        link: window.location.href,
+        title: "{{ page.wechat.share_title | default(page.title) }}",
+        desc: "{{ page.wechat.share_desc | default(page.subtitle) }}"
+    }
+    window.WechatJSSDKURL = '{{ config.wechat.jssdk_url }}'
+</script>
+{% endif %}

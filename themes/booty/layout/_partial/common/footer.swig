@@ -9,6 +9,7 @@
 {{ js('js/libs/jquery.hammer') }}
 {{ js('js/libs/lozad') }}
 {{ js('js/libs/base64') }}
+{{ js('js/libs/jweixin-1.0.0') }}
 {{ js('js/mods/util') }}
 {{ js('js/mods/common') }}
 {{ js('js/mods/console') }}

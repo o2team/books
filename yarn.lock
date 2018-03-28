@@ -4094,9 +4094,9 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
-"lunr@github:codepiano/lunr.js.git":
+"lunr@github:codepiano/lunr.js":
   version "0.7.1"
-  resolved "github:codepiano/lunr.js.git#7622590806fde24d74c80903baec8d5787ca7ad6"
+  resolved "https://codeload.github.com/codepiano/lunr.js/tar.gz/7622590806fde24d74c80903baec8d5787ca7ad6"
   dependencies:
     nodejieba "^2.0.0"
 

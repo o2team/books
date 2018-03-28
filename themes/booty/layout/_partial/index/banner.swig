@@ -38,7 +38,7 @@
       </div>
       <div class="newbook-cover">
         <a class="newbook-link" href="https://juejin.im/book/5a7bfe595188257a7349b52a/?ref=books.aotu.io" target="_blank" title="大厂 UI 开发实战手册">
-          <img class="newbook-pic" src="//img30.360buyimg.com/ling/jfs/t19249/282/981666836/313393/b4f3dd6e/5ab1bfdfN65c0e6e7.png.webp" alt="大厂 UI 开发实战手册"/>
+          <img class="newbook-pic" src="//img30.360buyimg.com/ling/jfs/t19249/282/981666836/313393/b4f3dd6e/5ab1bfdfN65c0e6e7.png" alt="大厂 UI 开发实战手册"/>
         </a>
         <span class="icon icon--xl icon-crown">
           <svg viewBox="0 0 1024 1024" aria-hidden="true">

@@ -2,6 +2,12 @@
 
 {% block page_class %}page-full page-index{% endblock %}
 
+{% block prebody %}
+<div style="display:none">
+  <img src="{{ url_for('/img/logo-sq.png') }}" alt="wx" />
+</div>
+{% endblock %}
+
 {% block main %}
 
   {% include '_partial/index/banner.swig' %}

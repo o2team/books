@@ -9,3 +9,8 @@
 {% include '_partial/common/copyright.swig' %}
 
 {% endblock %}
+
+
+{% block pagejs %}
+{{ js('js/post_wx_share') }}
+{% endblock %}
