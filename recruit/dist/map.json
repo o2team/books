@@ -1,0 +1,41 @@
+{
+  "dependency": {
+    "index.html": []
+  },
+  "include": {
+    "index.html": {
+      "css": [
+        {
+          "name": "gb.css",
+          "module": "gb"
+        },
+        {
+          "name": "index.css",
+          "module": "recruit",
+          "images": []
+        }
+      ],
+      "js": [
+        {
+          "name": "index.js",
+          "module": "recruit",
+          "images": []
+        }
+      ],
+      "images": [
+        {
+          "res": "css/gb.css",
+          "module": "gb"
+        },
+        {
+          "res": "css/index.css",
+          "module": "recruit"
+        },
+        {
+          "res": "js/index.js",
+          "module": "recruit"
+        }
+      ]
+    }
+  }
+}
