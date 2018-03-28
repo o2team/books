@@ -23,7 +23,12 @@
               fill="" p-id="6703"></path>
           </svg>
         </span>
+        {% if is_post() %}
         <span class="logo-txt">{{ config.subtitle }}</span>
+        <span class="logo-txt logo-txt-1">&nbsp;——&nbsp;{{ page.title }}</span>
+        {% else %}
+        <span class="logo-txt">{{ config.subtitle }}</span>
+        {% endif %}
       </a>
       <div id="navBurger" class="navbar-burger" data-target="navMenu">
         <span></span>

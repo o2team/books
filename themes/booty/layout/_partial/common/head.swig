@@ -39,6 +39,9 @@
 <meta name="msapplication-TileImage" content="{{ url_for('img/mstile-144x144.png') }}">
 
 <!-- CSS -->
+{% if theme.gitalk %}
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"/>
+{% endif %}
 {{ css('css/style') }}
 
 <!-- RSS -->

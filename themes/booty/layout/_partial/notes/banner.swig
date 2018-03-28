@@ -33,12 +33,12 @@
 
     <!--Other items-->
     {% if itemSize > 2 %}
-    <div class="columns">
+    <div class="columns is-multiline">
       {% for post in page.posts %}
       {% set author = post.author|default({github_name:config.github.user, nick:config.author}) %}
       {% if loop.index > 2 %}
       <div class="column is-4">
-      {% include '../post/mini.swig' with {classes: "", post: post, author: author} %}
+      {% include '../post/mini.swig' with {classes: "mpost-his", post: post, author: author} %}
       </div>
       {% endif %}
       {% endfor%}

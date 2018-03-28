@@ -1,0 +1,135 @@
+// post
+.post {
+  table {
+    margin: 20px 0;
+    width: 100%;
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+  &-cover {
+    img {
+      width: 100%;
+    }
+  }
+  &-comments {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid $color-border;
+  }
+}
+.chtml {
+  margin-bottom: px2rem(24px);
+  br {
+    display: none;
+  }
+}
+.recard {
+  background: $color-bg-block;
+  padding: px2rem(24px);
+  &-avatar {
+    margin-right: px2rem(24px);
+    min-width: px2rem(120px);
+    display: none;
+    @include tablet() {
+      display: block;
+    }
+  }
+  &-inner {
+    @include vhc-wrap();
+    flex-direction: row;
+  }
+  &-b {
+    .recard-avatar {
+      margin-left: px2rem(24px);
+      margin-right: 0;
+    }
+    .recard-inner {
+      flex-direction: row-reverse;
+    }
+  }
+  &-quote {
+    &-txt {
+      quotes: "\201C""\201D""\2018""\2019";
+      padding-right: px2rem(16px);
+      position: relative;
+      &:before {
+        content: open-quote;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        left: -5px;
+        position: relative;
+        top: 0px;
+        color: #ccc;
+        font-size: 3em;
+      }
+      &:after {
+        content: close-quote;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        right: 0;
+        position: absolute;
+        bottom: - px2rem(8px);
+        color: #ccc;
+        font-size: 3em;
+      }
+    }
+  }
+  &-author {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: px2rem(16px);
+    &-avatar {
+      width: px2rem(60px);
+      margin-right: px2rem(12px);
+      @include vhc-wrap();
+      img {
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+    &-info {
+      font-size: px2rem(14px);
+    }
+    &-name {
+      font-weight: bold;
+    }
+  }
+}
+// demos
+.demo {
+  border: 1px solid $color-border;
+  padding: px2rem(8px);
+  transition: all ease 0.3s;
+  &:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+  }
+  &-cover {
+    margin-bottom: px2rem(8px);
+    height: px2rem(120px);
+    background: #000;
+    color: #fff;
+    font-size: px2rem(18px);
+    font-weight: bold;
+    @include vhc-wrap();
+  }
+  &-pic {
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+  }
+  &-name {
+    font-weight: 600;
+    font-size: px2rem(16px);
+    margin-bottom: px2rem(8px);
+  }
+  &-desc {
+    font-size: px2rem(14px);
+    margin-bottom: px2rem(8px);
+  }
+  &-tags {
+    margin-top: px2rem(8px);
+  }
+}

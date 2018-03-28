@@ -30,6 +30,13 @@ body {
       font-size: px2rem(18px);
       font-weight: bold;
     }
+    &-txt-1 {
+      display: none;
+      @include tablet() {
+        display: inline;
+        color: $color-grey;
+      }
+    }
   }
   &-menu {
     &.is-active {
