@@ -4,7 +4,7 @@
 
 {% block prebody %}
 <div style="display:none">
-  <img src="{{ url_for('/img/logo-sq.png') }}" alt="wx" />
+  <img src="{{ url_for('/img/logo-sq300.jpg') }}" alt="wx" />
 </div>
 {% endblock %}
 
