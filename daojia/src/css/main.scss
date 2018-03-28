@@ -1,0 +1,48 @@
+/**
+ * Main Page
+ */
+.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #FB3826;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_wrap {
+  position: absolute;
+  width: 640PX;
+  height: 1028PX;
+  left: 50%;
+  top: 0;
+  margin-left: -320PX;
+  transform-origin: 50% 0;
+}
+
+.page_scene {
+  position: absolute;
+  width: 572PX;
+  height: 586PX;
+  top: 58PX;
+  margin-left: -286PX;
+  left: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.p8 .page_key {
+  position: absolute;
+  width: 572PX;
+  height: 586PX;
+  background-image: url("../img/p8.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  animation: p8 steps(3, end) 1.5s infinite;
+}
+
+@keyframes p8{
+  100% {
+    background-position: 0 150%;
+  }
+}
