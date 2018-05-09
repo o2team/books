@@ -2,8 +2,8 @@
   <div class="container">
     <div class="newbook">
       <div class="newbook-metas">
-        <h1 class="newbook-title">大厂 UI 开发实战手册</h1>
-        <h3 class="newbook-slogan">京东、腾讯等大厂 UI 开发或 H5 开发工程师的真实实战技巧</h3>
+        <h1 class="newbook-title">大厂 H5 开发实战手册</h1>
+        <h3 class="newbook-slogan">京东、腾讯等大厂 H5 开发或 UI 开发工程师的真实实战技巧</h3>
         <div class="newbook-actions">
           <a class="btn btn--owhite btn--licon" href="https://juejin.im/book/5a7bfe595188257a7349b52a/?ref=books.aotu.io" target="_blank" title="购买书籍">
             <span class="icon icon--mini">
@@ -37,8 +37,8 @@
         </div>
       </div>
       <div class="newbook-cover">
-        <a class="newbook-link" href="https://juejin.im/book/5a7bfe595188257a7349b52a/?ref=books.aotu.io" target="_blank" title="大厂 UI 开发实战手册">
-          <img class="newbook-pic" src="//img30.360buyimg.com/ling/jfs/t19249/282/981666836/313393/b4f3dd6e/5ab1bfdfN65c0e6e7.png" alt="大厂 UI 开发实战手册"/>
+        <a class="newbook-link" href="https://juejin.im/book/5a7bfe595188257a7349b52a/?ref=books.aotu.io" target="_blank" title="大厂 H5 开发实战手册">
+          <img class="newbook-pic" src="//img13.360buyimg.com/ling/jfs/t18559/198/2394349045/313968/cc5057b1/5af29234Ncee15ed6.png" alt="大厂 H5 开发实战手册"/>
         </a>
         <span class="icon icon--xl icon-crown">
           <svg viewBox="0 0 1024 1024" aria-hidden="true">
