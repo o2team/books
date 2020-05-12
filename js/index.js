@@ -1,0 +1,1 @@
+!function(i,t){var n={init:function(){this.$d=i("#evt"),this.$header=this.$d.find(".evt-header"),this.$list=this.$d.find(".evt-list"),t.$win.on("siteLoaded",function(){n.run()})},run:function(){}};n.init()}(jQuery,App);

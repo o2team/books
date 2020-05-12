@@ -1,0 +1,1 @@
+if("undefined"!=typeof gitalkOpts){var gitalk=new Gitalk(gitalkOpts);gitalk.render("comments")}
